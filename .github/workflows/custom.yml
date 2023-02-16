@@ -1,0 +1,11 @@
+name: custom
+on: push
+jobs:
+   main:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout code
+          uses: actions/checkout@v2
+        - name: use your custom action
+          uses: youssefshaaban/custom_action@main
+           
